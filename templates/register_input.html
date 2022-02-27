@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>登録画面</title>
+    </head>
+    <body>
+        <h1>名前とパスワードを登録してください</h1>
+        <form method="post" action="{{ url_for('register_info') }}">
+            <label>名前: <input type="text" name="name"></label>
+            <label>パスワード: <input type="password" name="pass"></label>
+            <input type="submit" value="登録">
+        </form>
+    </body>
+</html>
